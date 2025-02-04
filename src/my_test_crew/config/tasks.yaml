@@ -16,7 +16,7 @@
 #    Formatted as markdown without '```'
 #  agent: reporting_analyst
 
-  coding_task:
+coding_task:
   description: >
     Analyze the coding question mentioned in {topic}
     Make sure you find any relevant coding snippet with examples and explanation
