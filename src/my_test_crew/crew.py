@@ -17,7 +17,7 @@ class MyTestCrew():
 
 	# If you would like to add tools to your agents, you can learn more about it here:
 	# https://docs.crewai.com/concepts/agents#agent-tools
-	'''@agent
+	"""@agent
 	def researcher(self) -> Agent:
 		return Agent(
 			config=self.agents_config['researcher'],
@@ -29,7 +29,7 @@ class MyTestCrew():
 		return Agent(
 			config=self.agents_config['reporting_analyst'],
 			verbose=True
-		)'''
+		)"""
 	@agent
 	def developer(self) -> Agent:
 		return Agent(
@@ -40,7 +40,7 @@ class MyTestCrew():
 	# To learn more about structured task outputs, 
 	# task dependencies, and task callbacks, check out the documentation:
 	# https://docs.crewai.com/concepts/tasks#overview-of-a-task
-	'''@task
+	"""@task
 	def research_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['research_task'],
@@ -51,12 +51,11 @@ class MyTestCrew():
 		return Task(
 			config=self.tasks_config['reporting_task'],
 			output_file='report.md'
-		)'''
+		)"""
 	@task
 	def coding_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['coding_task'],
-			output_file='report.md'
 		)
 	@crew
 	def crew(self) -> Crew:
